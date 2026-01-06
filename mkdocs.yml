@@ -1,1 +1,43 @@
-site_name: My Docs
+site_name: Aphril’s Widget Library
+site_description: Modular Common UI based widgets for Unreal Engine
+site_author: Silverkeep Studios
+site_url: https://breedurbin.github.io/Aphrils-Widget-Library/
+
+repo_name: BreeDurbin/Aphrils-Widget-Library
+repo_url: https://github.com/BreeDurbin/Aphrils-Widget-Library
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+  palette:
+    scheme: slate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - attr_list
+
+nav:
+  - Getting Started:
+      - Overview: index.md
+      - Requirements: getting-started/requirements.md
+      - Installation: getting-started/installation.md
+  - Buttons:
+      - Base Button: buttons/base-button.md
+      - Variants: buttons/variants.md
+      - Styling: buttons/styling.md
+  - Common UI:
+      - Input & Actions: common-ui/input.md
+      - Text Styles: common-ui/text-styles.md
+  - Editor:
+      - Widget Blueprints: editor/widget-blueprints.md
+  - FAQ: faq.md
+  - Changelog: changelog.md
+
