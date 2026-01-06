@@ -45,7 +45,7 @@ This page will be replaces with a mkdocs page shortly. (Working on it at this mo
   - Use the UAwlMaterialButton Class as a baseline for a new class in your own cpp code
   - Use your own class name to avoid One Definition Rule (ODR) violations from teh compiler
   - Change the GetPaletteCategory() Funtion to return the Desired name of your Category
-# Additoinal Notes:
+# Additional Notes:
 This duplicate strategy for making your own buttons and themeing them as you like is nice as if gives you a solid default button setup which includes Animations, All Awl Defaults, and Instance Editable properties for your button
   - This means: You can Edit styling, Button Image, Text Styling, Text etc per widget when you add the button within a UMG WBP such as a Menu Widget
   - Change Defaults for your Button by editing the variable defaults in the Event Graph of your widget
