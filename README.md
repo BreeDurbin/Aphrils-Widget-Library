@@ -23,7 +23,7 @@ This page will be replaced with a mkdocs page shortly. (Working on it at this mo
 4. You should have 5 buttons there
 
 # Recommended Additional setup:
-1. In Project/Content Create a WidgetLibrary and then Buttons folder
+1. In Project/Content Create a WidgetLibrary/Buttons folder
 2. This is for user owned Material Instances, Widget Blueprints, Common Ui Styles etc
 
 # Your first Awl Button:
