@@ -1,4 +1,4 @@
-# Under construction. This will be up in 1-2 days
+# Under construction. This will be fully up in 1-2 days
 
 This is the support and Documantation page for Aphril's Widget Library.
 
@@ -51,3 +51,4 @@ This page will be replaces with a mkdocs page shortly. (Working on it at this mo
 This duplicate strategy for making your own buttons and themeing them as you like is nice as if gives you a solid default button setup which includes Animations, All Awl Defaults, and Instance Editable properties for your button
   - This means: You can Edit styling, Button Image, Text Styling, Text etc per widget when you add the button within a UMG WBP such as a Menu Widget
   - Change Defaults for your Button by editing the variable defaults in the Event Graph of your widget
+
