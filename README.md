@@ -5,7 +5,7 @@ You can find documentation for your product under Docs.
 If you are having technical issues create an issue in the Issues tab. 
 
 
-This page will be replaces with a mkdocs page shortly. (Working on it at this moment)
+This page will be replaced with a mkdocs page shortly. (Working on it at this moment)
 
 
 # Preliminary install guide:
