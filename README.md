@@ -8,24 +8,24 @@ If you are having technical issues create an issue in the Issues tab.
 This page will be replaces with a mkdocs page shortly. (Working on it at this moment)
 
 
-#Preliminary install guide:
+# Preliminary install guide:
 
 1. Unzip the zip into your plugins folder(Project/Plugins/), you should get: Project/Plugins/AphrilsWidgetLibrary_Buttons
 2. Add plugin to uproject directly or add using editor(Edit -> Plugins -> Enable AphrilsWidgetLibrary_Buttons)
 3. Install UiMaterialLab. Download the project from fab, Copy the Content/UiMaterialLab folder into you Project/Content
 4. Enable plugins view in your content drawer(content Drawer settings(Gear at top right of content drawer) -> Check Plugin Content)
 
-Additional Optional Steps
+# Additional Optional Steps
 1. Verify installation: Right click content drawer -> User Interface -> Widget Blueprint
 2. Open the new Widget Blueprint
 3. Check for Aphril's Widget Library in your palette (Defaults to Upper center Left)
 4. You should have 5 buttons there
 
-Recommended Additional setup:
+# Recommended Additional setup:
 1. In Project/Content Create a WidgetLibrary and then Buttons folder
 2. This is for user owned Material Instances, Widget Blueprints, Common Ui Styles etc
 
-Your first Awl Button:
+# Your first Awl Button:
 1. Duplicate a Material Instance from the Plugin -> Move it into WidgetLibrary/Buttons
 2. Dial in the material instance to your preferred style
 3. Duplicate a HexButton from the Plugin -> Move it into your WidgetLibrary/Buttons
