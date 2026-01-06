@@ -12,8 +12,9 @@ This page will be replaced with a mkdocs page shortly. (Working on it at this mo
 
 1. Unzip the zip into your plugins folder(Project/Plugins/), you should get: Project/Plugins/AphrilsWidgetLibrary_Buttons
 2. Add plugin to uproject directly or add using editor(Edit -> Plugins -> Enable AphrilsWidgetLibrary_Buttons)
-3. Install UiMaterialLab. Download the project from fab, Copy the Content/UiMaterialLab folder into you Project/Content
-4. Enable plugins view in your content drawer(content Drawer settings(Gear at top right of content drawer) -> Check Plugin Content)
+3. Build your Project
+4. Install UiMaterialLab. Download the project from fab, Copy the Content/UiMaterialLab folder into you Project/Content
+5. Enable plugins view in your content drawer(content Drawer settings(Gear at top right of content drawer) -> Check Plugin Content)
 
 # Additional Optional Steps
 1. Verify installation: Right click content drawer -> User Interface -> Widget Blueprint
