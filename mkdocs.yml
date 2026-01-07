@@ -36,7 +36,7 @@ nav:
       - Widget Blueprints:            general-guides/widget-blueprints.md
       - Material Parameters:          general-guides/material-parameters.md
       - Creating new base shapes:     general-guides/creating-new-shape-textures.md
-      - Channel Packing with Krita:   general-guides/channel-packing.md
+      - Channel Packing:              general-guides/channel-packing.md
   - Misc: 
       - Design Pillars:               misc/design-pillars.md
       - About:                        misc/about.md
