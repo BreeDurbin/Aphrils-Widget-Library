@@ -25,19 +25,12 @@ markdown_extensions:
   - attr_list
 
 nav:
-  - Getting Started:
-      - Overview: index.md
-      - Requirements: getting-started/requirements.md
-      - Installation: getting-started/installation.md
-  - Buttons:
-      - Base Button: buttons/base-button.md
-      - Variants: buttons/variants.md
-      - Styling: buttons/styling.md
-  - Common UI:
-      - Input & Actions: common-ui/input.md
-      - Text Styles: common-ui/text-styles.md
-  - Editor:
-      - Widget Blueprints: editor/widget-blueprints.md
-  - FAQ: faq.md
-  - Changelog: changelog.md
-
+  - Overview:
+      - Overview:     index.md
+      - Requirements: requirements.md
+  - Button-Pack:
+      - Installation:          button-pack_1/button-pack-installation.md
+      - Styling:               button-pack_1/button-pack-styling.md
+      - Widget Blueprints:     button-pack_1/button-pack-widget-blueprints.md
+      - Creating new buttons:  button-pack_1/button-pack-creating-new-buttons.md
+      - Changelog:             button-pack_1/changelog.md
