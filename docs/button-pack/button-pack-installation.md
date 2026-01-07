@@ -29,15 +29,17 @@
 ### If you cannot see your plugin in the content drawer after enabling plugin visibility:
 
 Your plugin is likely installed as an engine plugin. Enabling engine content will let 
-you view the plugin from the content drawer. Content Drawer Settings -> Check "Engine Content"
+you view the plugin from the content drawer. Content Drawer Settings → Check "Engine Content"
 You should now see your plugin in the engine folder in your content drawer, but this isn't ideal
 because there are a large number of engine plugins. 
 
 ### Recommended: Install the plugin in your project
 
+This will give you easier access to your plugin based content.
+
 To get your plugin from the engine installation:
 
-1. In editor select Edit -> Plugins 
+1. In editor select Edit → Plugins 
 2. Search "Aphrils Widget Library - Buttons"
 3. Select package
 4. Pick an output folder that is easy to get to.
@@ -48,7 +50,7 @@ To get your plugin from the engine installation:
    - You can know you have the right folder copied because inside it there will be a "AphrilsWidgetLibraryButtons.uplugin" file inside it.
 7. Now that we have the plugin, we can install it in your project but copying the plugin folder into your "ProjectFolder/Plugins"
 8. Build your project to ensure the plugin is built.
-9. Enable the plugin in Edit -> Plugins -> Aphril's Widget Library - Buttons
+9. Enable the plugin in Edit → Plugins → Aphril's Widget Library - Buttons
 10. You should now be able to see the plugin in your Content Drawer in the "Plugins" folder.
 
 ---
@@ -56,13 +58,13 @@ To get your plugin from the engine installation:
 ## Recommended: Project Setup
 
 1. In `Project/Content`, create the following folders:
-- `WidgetLibrary`
-- `WidgetLibrary/Buttons`
+   - `WidgetLibrary`
+   - `WidgetLibrary/Buttons`
 
 2. Use these folders for:
-- User-owned Material Instances
-- Widget Blueprints
-- Common UI styles
+   - User-owned Material Instances
+   - Widget Blueprints
+   - Common UI styles
 
 This keeps project-specific customization cleanly separated from plugin content.
 
@@ -82,8 +84,8 @@ This keeps project-specific customization cleanly separated from plugin content.
 
 5. Try out your new buttons.
 
-6. You can also see all buttons at once though Plugins -> Aphril's Widget Library - Buttons -> Showcase
-   - Right click WBP_Showcase -> Preview
+6. You can also see all buttons at once though Plugins → "Aphril's Widget Library - Buttons" → Showcase
+   - Right click WBP_Showcase → Preview
 
 ---
 
