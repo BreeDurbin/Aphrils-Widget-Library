@@ -24,9 +24,48 @@
   - Click the **gear icon** (top-right)
   - Enable **Show Plugin Content**
 
+### If you cannot see your plugin in the content drawer after enabling plugin visibility:
+
+Your plugin is likely installed as an engine plugin. Enabling engine content will let 
+you view the plugin from the content drawer. Content Drawer Settings -> Check "Engine Content"
+You should now see your plugin in the engine folder in your content drawer, but this isn't ideal
+because there are a large number of engine plugins. 
+
+### Recommended: Install the plugin in your project
+
+To get your plugin from the engine installation:
+1. In editor select Edit -> Plugins
+2. Search "Aphrils Widget Library - Buttons"
+3. Select package
+4. Pick an output folder that is easy to get to.
+5. Navigate to the packaged plugin output
+6. Depending on how the output was packaged:
+   - If it is packaged in a host project copy the plugin("AphrilsWidgetLibraryButtons" folder) from the plugins directory.
+   - If it is just the plugin copy the plugin "AphrilsWidgetLibraryButtons" folder
+   - You can know you have the right folder copied because inside it there will be a "AphrilsWidgetLibraryButtons.uplugin" file inside it.
+7. Now that we have the plugin, we can install it in your project but copying the plugin folder into your "ProjectFolder/Plugins"
+8. Build your project to ensure the plugin is built.
+9. Enable the plugin in Edit -> Plugins -> Aphril's Widget Library - Buttons
+10. You should now be able to see the plugin in your Content Drawer in the "Plugins" folder.
+
 ---
 
-## Optional Verification Steps
+## Recommended Project Setup
+
+1. In `Project/Content`, create the following folders:
+- `WidgetLibrary`
+- `WidgetLibrary/Buttons`
+
+2. Use these folders for:
+- User-owned Material Instances
+- Widget Blueprints
+- Common UI styles
+
+This keeps project-specific customization cleanly separated from plugin content.
+
+---
+
+## Optional: Verification Steps
 
 1. In the Content Drawer, right-click and select:  
    **User Interface → Widget Blueprint**
@@ -38,37 +77,13 @@
 
 4. You should see **five buttons** available
 
----
+5. Try out your new buttons.
 
-## Recommended Project Setup
-
-1. In `Project/Content`, create the following folders:
-  - `WidgetLibrary`
-  - `WidgetLibrary/Buttons`
-
-2. Use these folders for:
-  - User-owned Material Instances
-  - Widget Blueprints
-  - Common UI styles
-
-This keeps project-specific customization cleanly separated from plugin content.
+6. You can also see all buttons at once though Plugins -> Aphril's Widget Library - Buttons -> Showcase
+   - Right click WBP_Showcase -> Preview
 
 ---
 
-### Adding Your Button to the Common Category (Optional)
+Now that you are all setup Installation-Wise our [Workflow Guide](https://breedurbin.github.io/Aphrils-Widget-Library/general-guides/workflow/) can help you get to know your new content.
 
-To place your button in the **Common** category (Common UI default for user-created widgets):
-
-1. Open your button widget
-2. Top menu → **File → Reparent Blueprint**
-3. Select `CommonButtonBase`
-
----
-
-### Creating Your Own Palette Category (Advanced)
-
-1. Use the `UAwlMaterialButton` class as a baseline for a new C++ class
-2. Use your own class name to avoid One Definition Rule (ODR) violations
-3. Override `GetPaletteCategory()` to return your desired category name
-4. Reparent the widgets you want in the new category to this new class.
-
+If you are having technical issues with the installation you can create a [Support Ticket](https://github.com/BreeDurbin/Aphrils-Widget-Library/issues) for assistance.

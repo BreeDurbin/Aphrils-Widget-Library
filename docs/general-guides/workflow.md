@@ -30,6 +30,26 @@ In the **Details** panel for `Button Image`:
 
 ---
 
+### Adding Your Button to the Common UI Category (Optional)
+
+To place your button in the **Common UI** category (Common UI default for user-created widgets):
+
+1. Open your button widget
+2. Top menu → **File → Reparent Blueprint**
+3. Select `CommonButtonBase`
+
+---
+
+### Creating Your Own Palette Category (Advanced)
+
+1. Use the `UAwlMaterialButton` class as a baseline for a new C++ class
+2. Use your own class name to avoid One Definition Rule (ODR) violations
+3. Override `GetPaletteCategory()` to return your desired category name
+4. Reparent the widgets you want in the new category to this new class.
+
+
+---
+
 ## Additional Notes
 
 This duplication-based workflow provides a strong default setup that includes:
@@ -41,4 +61,5 @@ This allows you to:
 - Edit styling, button images, text styling, and text per widget
 - Adjust defaults by editing variable default values in the Event Graph
 - Customize buttons directly inside UMG Widget Blueprints (e.g., menus)
+
 

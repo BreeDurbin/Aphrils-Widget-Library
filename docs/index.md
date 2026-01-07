@@ -1,5 +1,7 @@
 # Aphril's Widget Library
 
+---
+
 Welcome to the official documentation for Aphril’s Widget Library.
 
 **Aphril’s Widget Library (AWL)** is a style-agnostic, material-driven UI system built around modular composition, procedural flexibility, and production-ready efficiency—so teams can ship polished interfaces without building a widget library from scratch.

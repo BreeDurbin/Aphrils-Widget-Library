@@ -519,6 +519,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#adding-your-button-to-the-common-ui-category-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Your Button to the Common UI Category (Optional)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-own-palette-category-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Your Own Palette Category (Advanced)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#additional-notes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -801,6 +823,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#adding-your-button-to-the-common-ui-category-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Your Button to the Common UI Category (Optional)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-own-palette-category-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Your Own Palette Category (Advanced)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#additional-notes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -865,6 +909,22 @@
 <ol>
 <li>Your newly themed button should now appear in the<br />
 <strong>Aphril’s Widget Library</strong> category in the Widget Palette</li>
+</ol>
+<hr />
+<h3 id="adding-your-button-to-the-common-ui-category-optional">Adding Your Button to the Common UI Category (Optional)</h3>
+<p>To place your button in the <strong>Common UI</strong> category (Common UI default for user-created widgets):</p>
+<ol>
+<li>Open your button widget</li>
+<li>Top menu → <strong>File → Reparent Blueprint</strong></li>
+<li>Select <code>CommonButtonBase</code></li>
+</ol>
+<hr />
+<h3 id="creating-your-own-palette-category-advanced">Creating Your Own Palette Category (Advanced)</h3>
+<ol>
+<li>Use the <code>UAwlMaterialButton</code> class as a baseline for a new C++ class</li>
+<li>Use your own class name to avoid One Definition Rule (ODR) violations</li>
+<li>Override <code>GetPaletteCategory()</code> to return your desired category name</li>
+<li>Reparent the widgets you want in the new category to this new class.</li>
 </ol>
 <hr />
 <h2 id="additional-notes">Additional Notes</h2>

@@ -410,16 +410,33 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional-verification-steps" class="md-nav__link">
+    <nav class="md-nav" aria-label="Basic Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-you-cannot-see-your-plugin-in-the-content-drawer-after-enabling-plugin-visibility" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Optional Verification Steps
+        If you cannot see your plugin in the content drawer after enabling plugin visibility:
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-install-the-plugin-in-your-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended: Install the plugin in your project
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -432,33 +449,16 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Recommended Project Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adding-your-button-to-the-common-category-optional" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-verification-steps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding Your Button to the Common Category (Optional)
+        Optional: Verification Steps
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-your-own-palette-category-advanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating Your Own Palette Category (Advanced)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -859,16 +859,33 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#optional-verification-steps" class="md-nav__link">
+    <nav class="md-nav" aria-label="Basic Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-you-cannot-see-your-plugin-in-the-content-drawer-after-enabling-plugin-visibility" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Optional Verification Steps
+        If you cannot see your plugin in the content drawer after enabling plugin visibility:
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-install-the-plugin-in-your-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended: Install the plugin in your project
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -881,33 +898,16 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Recommended Project Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adding-your-button-to-the-common-category-optional" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-verification-steps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding Your Button to the Common Category (Optional)
+        Optional: Verification Steps
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-your-own-palette-category-advanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating Your Own Palette Category (Advanced)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -961,24 +961,26 @@
 <li>Click the <strong>gear icon</strong> (top-right)</li>
 <li>Enable <strong>Show Plugin Content</strong></li>
 </ol>
-<hr />
-<h2 id="optional-verification-steps">Optional Verification Steps</h2>
-<ol>
-<li>
-<p>In the Content Drawer, right-click and select:<br />
-<strong>User Interface → Widget Blueprint</strong></p>
-</li>
-<li>
-<p>Open the newly created Widget Blueprint</p>
-</li>
-<li>
-<p>In the Palette, locate <strong>Aphril’s Widget Library</strong><br />
-<em>(Defaults to the upper center-left area of the palette)</em></p>
-</li>
-<li>
-<p>You should see <strong>five buttons</strong> available</p>
-</li>
-</ol>
+<h3 id="if-you-cannot-see-your-plugin-in-the-content-drawer-after-enabling-plugin-visibility">If you cannot see your plugin in the content drawer after enabling plugin visibility:</h3>
+<p>Your plugin is likely installed as an engine plugin. Enabling engine content will let 
+you view the plugin from the content drawer. Content Drawer Settings -&gt; Check "Engine Content"
+You should now see your plugin in the engine folder in your content drawer, but this isn't ideal
+because there are a large number of engine plugins. </p>
+<h3 id="recommended-install-the-plugin-in-your-project">Recommended: Install the plugin in your project</h3>
+<p>To get your plugin from the engine installation:
+1. In editor select Edit -&gt; Plugins
+2. Search "Aphrils Widget Library - Buttons"
+3. Select package
+4. Pick an output folder that is easy to get to.
+5. Navigate to the packaged plugin output
+6. Depending on how the output was packaged:
+   - If it is packaged in a host project copy the plugin("AphrilsWidgetLibraryButtons" folder) from the plugins directory.
+   - If it is just the plugin copy the plugin "AphrilsWidgetLibraryButtons" folder
+   - You can know you have the right folder copied because inside it there will be a "AphrilsWidgetLibraryButtons.uplugin" file inside it.
+7. Now that we have the plugin, we can install it in your project but copying the plugin folder into your "ProjectFolder/Plugins"
+8. Build your project to ensure the plugin is built.
+9. Enable the plugin in Edit -&gt; Plugins -&gt; Aphril's Widget Library - Buttons
+10. You should now be able to see the plugin in your Content Drawer in the "Plugins" folder.</p>
 <hr />
 <h2 id="recommended-project-setup">Recommended Project Setup</h2>
 <ol>
@@ -996,21 +998,33 @@
 </ol>
 <p>This keeps project-specific customization cleanly separated from plugin content.</p>
 <hr />
-<h3 id="adding-your-button-to-the-common-category-optional">Adding Your Button to the Common Category (Optional)</h3>
-<p>To place your button in the <strong>Common</strong> category (Common UI default for user-created widgets):</p>
+<h2 id="optional-verification-steps">Optional: Verification Steps</h2>
 <ol>
-<li>Open your button widget</li>
-<li>Top menu → <strong>File → Reparent Blueprint</strong></li>
-<li>Select <code>CommonButtonBase</code></li>
+<li>
+<p>In the Content Drawer, right-click and select:<br />
+<strong>User Interface → Widget Blueprint</strong></p>
+</li>
+<li>
+<p>Open the newly created Widget Blueprint</p>
+</li>
+<li>
+<p>In the Palette, locate <strong>Aphril’s Widget Library</strong><br />
+<em>(Defaults to the upper center-left area of the palette)</em></p>
+</li>
+<li>
+<p>You should see <strong>five buttons</strong> available</p>
+</li>
+<li>
+<p>Try out your new buttons.</p>
+</li>
+<li>
+<p>You can also see all buttons at once though Plugins -&gt; Aphril's Widget Library - Buttons -&gt; Showcase</p>
+</li>
+<li>Right click WBP_Showcase -&gt; Preview</li>
 </ol>
 <hr />
-<h3 id="creating-your-own-palette-category-advanced">Creating Your Own Palette Category (Advanced)</h3>
-<ol>
-<li>Use the <code>UAwlMaterialButton</code> class as a baseline for a new C++ class</li>
-<li>Use your own class name to avoid One Definition Rule (ODR) violations</li>
-<li>Override <code>GetPaletteCategory()</code> to return your desired category name</li>
-<li>Reparent the widgets you want in the new category to this new class.</li>
-</ol>
+<p>Now that you are all setup Installation-Wise our <a href="https://breedurbin.github.io/Aphrils-Widget-Library/general-guides/workflow/">Workflow Guide</a> can help you get to know your new content.</p>
+<p>If you are having technical issues with the installation you can create a <a href="https://github.com/BreeDurbin/Aphrils-Widget-Library/issues">Support Ticket</a> for assistance.</p>
 
 
 
