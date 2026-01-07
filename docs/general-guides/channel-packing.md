@@ -1,8 +1,8 @@
-# Channel Packing in Krita
+# Channel Packing
 
 ---
 
-### Shape textures in Awl follow the following format:
+#### Shape textures in Awl follow the following format:
 
 **Red: Border**
 
@@ -11,6 +11,8 @@
 **Blue : Opacity Mask**
 
 ---
+
+#### How to Channel-Pack Textures in Krita 
 
 In Krita you can easily pack a layered image into the appropriate R,G,B channels
 
