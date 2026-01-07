@@ -43,7 +43,7 @@ body:
         - Project Plugin
         - Engine Plugin
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: question
