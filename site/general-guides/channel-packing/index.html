@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://breedurbin.github.io/Aphrils-Widget-Library/general-guides/channel-packing/">
       
       
+        <link rel="prev" href="../creating-new-shape-textures/">
+      
+      
+        <link rel="next" href="../../misc/design-pillars/">
       
       
         
@@ -25,7 +29,7 @@
     
     
       
-        <title>Channel packing - Aphril’s Widget Library</title>
+        <title>Channel Packing with Krita - Aphril’s Widget Library</title>
       
     
     
@@ -73,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#channel-packing-in-krita" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Channel packing
+              Channel Packing with Krita
             
           </span>
         </div>
@@ -393,8 +402,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -405,13 +416,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -432,7 +441,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -583,6 +592,92 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Channel Packing with Krita
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Channel Packing with Krita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shape-textures-in-awl-follow-the-following-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shape textures in Awl follow the following format:
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -724,6 +819,27 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shape-textures-in-awl-follow-the-following-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shape textures in Awl follow the following format:
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -743,9 +859,34 @@
   
 
 
-  <h1>Channel packing</h1>
-
-<p>guide to channel packing the base shape in krita</p>
+<h1 id="channel-packing-in-krita">Channel Packing in Krita</h1>
+<hr />
+<h3 id="shape-textures-in-awl-follow-the-following-format">Shape textures in Awl follow the following format:</h3>
+<p><strong>Red: Border</strong>
+<strong>Green: Body</strong>
+<strong>Blue : Opacity Mask</strong></p>
+<hr />
+<p>In Krita you can easily pack a layered image into the appropriate R,G,B channels</p>
+<p>Setup your image with the following layers for packing:
+  - Border
+  - Body
+  - Opacity</p>
+<p><strong>Warning</strong> : Copy Red, Copy Green, Copy Blue filters are often used for channel packing in Krita,
+but they can be a bit finnicky, luckily Krita offers us a better way to pack our textures.</p>
+<p>For each layer:
+1. In the layers docker (Default Center-Right of your screen in Krita 5) 
+  - Right-Click the layer you would like to assign to be packed into a channel.
+  - Select Properties
+  - In the active channels deselect the channels you do not want to pack from the layer.
+  - E.g. For packing the Border layer into the red channel only red should be selected.
+2. Repeat this for all layers you wish to pack. You can also pack multiple layers into the same channel.
+3. Disable visibility on all layers you do not want to pack, ensure visibility on all layers you want to pack. (Eye icon for each layer)
+4. Export your texture:
+   - File -&gt; Export -&gt; File Type: Png -&gt; Save
+   - When selecting compression and save file settings, uncheck "Store Alpha Channel" this will premultiply the alpha to our R,G, B channels and save us space
+   - If you do not uncheck the "Store Alpha Channel" your image may have blockyness when you import it into ue. 
+     This is because we do not use the Alpha channel and if the alpha isn't premultiplied in if the RGB Channels are super clean when you export they will come out
+     jagged because the alpha hasn't cleaned them up.</p>
 
 
 
