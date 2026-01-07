@@ -4,18 +4,26 @@
 
 ## Basic Installation
 
-1. Unzip the downloaded archive into your project’s plugin directory:  
-   `Project/Plugins/`
+1. Enable the plugin:
+  - Either add it directly to your `.uproject` file, 
+  - ```
+    	{
+			"Name": "AphrilsWidgetLibraryButtons",
+			"Enabled": true,
+			"MarketplaceURL": "https://www.fab.com/sellers/Silverkeep%20Studios%20-%20Aphril",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Linux"
+			]
+		}
+    ```
 
-   After extraction, you should have:  
-   `Project/Plugins/AphrilsWidgetLibrary_Buttons`
+**or**
 
-2. Enable the plugin:
-  - Either add it directly to your `.uproject` file, **or**
   - Enable it through the editor:  
-    **Edit → Plugins → Enable `AphrilsWidgetLibraryButtons`**
+    **Edit → Plugins → Enable `Aphrils Widget Library - Buttons`**
 
-4. Enable plugin content visibility:
+2. Enable plugin content visibility:
   - Open the Content Drawer
   - Click the **gear icon** (top-right)
   - Enable **Show Plugin Content**
