@@ -1,4 +1,3 @@
-## About
 
 **Aphril’s Widget Library (AWL)** is a line of widgets for Unreal Engine 5.
 
