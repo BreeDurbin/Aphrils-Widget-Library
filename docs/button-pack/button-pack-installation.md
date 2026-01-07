@@ -13,11 +13,7 @@
 2. Enable the plugin:
   - Either add it directly to your `.uproject` file, **or**
   - Enable it through the editor:  
-    **Edit → Plugins → Enable `AphrilsWidgetLibrary_Buttons`**
-
-3. Install **UiMaterialLab**:
-  - Download the UiMaterialLab project from Fab
-  - Copy the `Content/UiMaterialLab` folder into your project’s `Content` directory
+    **Edit → Plugins → Enable `AphrilsWidgetLibraryButtons`**
 
 4. Enable plugin content visibility:
   - Open the Content Drawer
