@@ -24,6 +24,8 @@
   - Click the **gear icon** (top-right)
   - Enable **Show Plugin Content**
 
+---
+
 ### If you cannot see your plugin in the content drawer after enabling plugin visibility:
 
 Your plugin is likely installed as an engine plugin. Enabling engine content will let 
@@ -34,7 +36,8 @@ because there are a large number of engine plugins.
 ### Recommended: Install the plugin in your project
 
 To get your plugin from the engine installation:
-1. In editor select Edit -> Plugins
+
+1. In editor select Edit -> Plugins 
 2. Search "Aphrils Widget Library - Buttons"
 3. Select package
 4. Pick an output folder that is easy to get to.
@@ -50,7 +53,7 @@ To get your plugin from the engine installation:
 
 ---
 
-## Recommended Project Setup
+## Recommended: Project Setup
 
 1. In `Project/Content`, create the following folders:
 - `WidgetLibrary`
