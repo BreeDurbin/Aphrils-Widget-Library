@@ -5,7 +5,9 @@
 ### Shape textures in Awl follow the following format:
 
 **Red: Border**
+
 **Green: Body**
+
 **Blue : Opacity Mask**
 
 ---
@@ -20,7 +22,7 @@ Setup your image with the following layers for packing:
 **Warning** : Copy Red, Copy Green, Copy Blue filters are often used for channel packing in Krita,
 but they can be a bit finicky, luckily Krita offers us a better way to pack our textures.
 
-For each layer:
+**For each layer:**
 
 1. In the layers docker (Default Center-Right of your screen in Krita 5) 
   - Right-Click the layer you would like to assign to be packed into a channel.
