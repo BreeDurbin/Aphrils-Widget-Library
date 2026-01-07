@@ -1,0 +1,74 @@
+name: Support Ticket
+description: Get help using this plugin
+title: "[Support]: "
+labels: ["support"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is for **usage questions and support requests**.
+        If you believe you've found a bug, please use the Bug Report form instead.
+
+  - type: input
+    id: ue_version
+    attributes:
+      label: Unreal Engine Version
+      placeholder: "5.6.1"
+    validations:
+      required: true
+      
+  - type: input
+    id: product_name
+    attributes:
+      label: Product Name
+      placeholder: "Aphrils Widget Library - Widget Pack Name"
+    validations:
+      required: true
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin Version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install_method
+    attributes:
+      label: Installation Method
+      options:
+        - Fab Marketplace
+        - GitHub Release
+        - Built from source
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Support Request
+      description: What are you trying to do, and where are you getting stuck?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Screenshots, logs, or relevant setup details
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have checked the documentation
+          required: true
+        - label: I am using a supported Unreal Engine version
+          required: true
+

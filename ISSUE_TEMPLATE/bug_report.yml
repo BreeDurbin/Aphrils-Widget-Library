@@ -1,0 +1,73 @@
+name: Bug Report
+description: Report a reproducible bug
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+        Please fill out the information below as completely as possible.
+
+  - type: input
+    id: ue_version
+    attributes:
+      label: Unreal Engine Version
+      placeholder: "5.6.1"
+    validations:
+      required: true
+      
+      
+  - type: input
+    id: product_name
+    attributes:
+      label: Product Name
+      placeholder: "Aphrils Widget Library - Widget Pack Name"
+    validations:
+      required: true
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin Version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Be precise.
+      placeholder: |
+        1. Open project
+        2. Add widget
+        3. Click button
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Screenshots
+      description: Paste logs or attach screenshots if relevant
+    validations:
+      required: false
+
