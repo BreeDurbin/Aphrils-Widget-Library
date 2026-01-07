@@ -26,11 +26,16 @@ markdown_extensions:
 
 nav:
   - Overview:
-      - Overview:     index.md
-      - Requirements: requirements.md
+      - Overview:              index.md
+      - Requirements:          requirements.md
   - Button-Pack:
       - Installation:          button-pack/button-pack-installation.md
       - Styling:               button-pack/button-pack-styling.md
       - Widget Blueprints:     button-pack/button-pack-widget-blueprints.md
       - Creating new buttons:  button-pack/button-pack-creating-new-buttons.md
       - Changelog:             button-pack/changelog.md
+
+extra: 
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/BreeDurbin
