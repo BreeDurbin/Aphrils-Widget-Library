@@ -36,6 +36,17 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - Linux
+        - Mac
+    validations:
+      required: true
+
   - type: textarea
     id: description
     attributes:
