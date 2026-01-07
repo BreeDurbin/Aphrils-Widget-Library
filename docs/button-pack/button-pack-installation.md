@@ -5,17 +5,17 @@
 ## Basic Installation
 
 1. Enable the plugin:
-  - Either add it directly to your `.uproject` file's "Plugins" section, 
-    - ```
-          {
+- Either add it directly to your `.uproject` file's "Plugins" section, 
+  ```
+      {
+  
+        "Name": "AphrilsWidgetLibraryButtons",
+        "Enabled": true,
+        "MarketplaceURL": "https://www.fab.com/sellers/Silverkeep%20Studios%20-%20Aphril",
+        "SupportedTargetPlatforms": [ "Win64", "Linux" ]
     
-              "Name": "AphrilsWidgetLibraryButtons",
-              "Enabled": true,
-              "MarketplaceURL": "https://www.fab.com/sellers/Silverkeep%20Studios%20-%20Aphril",
-              "SupportedTargetPlatforms": [ "Win64", "Linux" ]
-      
-          }
-      ```
+      }
+  ```
 
 **or**
 
