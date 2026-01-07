@@ -25,20 +25,21 @@ markdown_extensions:
   - attr_list
 
 nav:
-  - Overview:                       index.md
-  - Requirements:                   requirements.md
+  - Overview:                         index.md
+  - Requirements:                     requirements.md
   - Button-Pack:
-      - Installation:               button-pack/button-pack-installation.md
-      - Changelog:                  button-pack/changelog.md
+      - Installation:                 button-pack/button-pack-installation.md
+      - Changelog:                    button-pack/changelog.md
   - General Guides: 
-      - Workflow:                   general-guides/workflow.md
-      - Widget Styling:             general-guides/widget-styling.md
-      - Widget Blueprints:          general-guides/widget-blueprints.md
-      - Material Parameters:        general-guides/material-parameters.md
-      - Creating new base shapes:   general-guides/creating-new-shape-textures.md
+      - Workflow:                     general-guides/workflow.md
+      - Widget Styling:               general-guides/widget-styling.md
+      - Widget Blueprints:            general-guides/widget-blueprints.md
+      - Material Parameters:          general-guides/material-parameters.md
+      - Creating new base shapes:     general-guides/creating-new-shape-textures.md
+      - Channel Packing with Krita:   general-guides/channel-packing.md
   - Misc: 
-      - Design Pillars:             misc/design-pillars.md
-      - About:                      misc/about.md
+      - Design Pillars:               misc/design-pillars.md
+      - About:                        misc/about.md
 
 extra: 
   social:

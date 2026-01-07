@@ -92,3 +92,6 @@ This keeps project-specific customization cleanly separated from plugin content.
 Now that you are all setup Installation-Wise our [Workflow Guide](https://breedurbin.github.io/Aphrils-Widget-Library/general-guides/workflow/) can help you get to know your new content.
 
 If you are having technical issues with the installation you can create a [Support Ticket](https://github.com/BreeDurbin/Aphrils-Widget-Library/issues) for assistance.
+
+---
+
