@@ -1,19 +1,13 @@
 # Aphril's Widget Library
 
-Aphrils Widget Library(Awl) is a line of widgets for UE5.
 
-The goal of Aphril's Widget Library is to provide creators with a modular library of flexible, configurable high quality widgets needed to build user interfaces quickly and efficiently. 
+Aphril’s Widget Library(Awl) is a style-agnostic, material-driven UI system built around modular composition, procedural flexibility, 
+and production-ready efficiency—so teams can ship polished interfaces without building a widget library from scratch.
 
-Awl widgets are designed to be flexible enough to fit into your existing game ui design, bringing high quality configurable procedural effects, animations and themeing. 
-This lets your team focus on implementing their game rather than building a complete widget library from scratch. 
+You have reached our documentation page.
 
-On top of procedural effects we use a thoughtful texture stack allowing the user to add a variety of texture based effects(Grunge, Background, Noise and Stencils) to their widgets.
+You can find technical documentation for all our products on the left.
 
-All widgets use a hybrid grayscale texture plus parameterized materials approach allowing materials to easily be dialed in to fit with the desired design of the user. 
+This is our Fab Store:
 
-This approach allows for maximum stylistic flexibility.  You can:
-- Retheme any widget by changing the colors in the material
-- Change animations by manipulating all material parameters in sequencer
-- Change Styling for every widget using all the flexibility of Common Ui styles
-- Change the feel of widgets by swapping textures(Grunge, Noise, Background. Stencils) and modulating their intensity
-- Create entirely new widget styles by providing your own grayscale shape textures
+This is out Product Support Page:

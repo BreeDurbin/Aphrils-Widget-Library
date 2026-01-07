@@ -34,6 +34,9 @@ nav:
       - Widget Blueprints:     button-pack/button-pack-widget-blueprints.md
       - Creating new buttons:  button-pack/button-pack-creating-new-buttons.md
       - Changelog:             button-pack/changelog.md
+  - Misc: 
+      - Design Pillars:        design-pillars.md
+      - About:                 about.md
 
 extra: 
   social:
