@@ -964,26 +964,22 @@
 <h2 id="basic-installation">Basic Installation</h2>
 <ol>
 <li>Enable the plugin:</li>
-<li>Either add it directly to your <code>.uproject</code> file's "Plugins" section, <ul>
-<li>
-<p>```
-      {</p>
-<div class="highlight"><pre><span></span><code>  &quot;Name&quot;: &quot;AphrilsWidgetLibraryButtons&quot;,
-  &quot;Enabled&quot;: true,
-  &quot;MarketplaceURL&quot;: &quot;https://www.fab.com/sellers/Silverkeep%20Studios%20-%20Aphril&quot;,
-  &quot;SupportedTargetPlatforms&quot;: [ &quot;Win64&quot;, &quot;Linux&quot; ]
-</code></pre></div>
-<p>}
-      ```</p>
-</li>
-</ul>
-</li>
+<li>Either add it directly to your <code>.uproject</code> file's "Plugins" section, 
+  <div class="highlight"><pre><span></span><code>    {
+
+      &quot;Name&quot;: &quot;AphrilsWidgetLibraryButtons&quot;,
+      &quot;Enabled&quot;: true,
+      &quot;MarketplaceURL&quot;: &quot;https://www.fab.com/sellers/Silverkeep%20Studios%20-%20Aphril&quot;,
+      &quot;SupportedTargetPlatforms&quot;: [ &quot;Win64&quot;, &quot;Linux&quot; ]
+
+    }
+</code></pre></div></li>
 </ol>
 <p><strong>or</strong></p>
-<ul>
+<ol>
+<li>Enable it through the editor:</li>
 <li>
-<p>Enable it through the editor:<br />
-<strong>Edit → Plugins → Enable <code>Aphrils Widget Library - Buttons</code></strong></p>
+<p><strong>Edit → Plugins → Enable <code>Aphrils Widget Library - Buttons</code></strong></p>
 </li>
 <li>
 <p>Enable plugin content visibility:</p>
@@ -991,7 +987,7 @@
 <li>Open the Content Drawer</li>
 <li>Click the <strong>gear icon</strong> (top-right)</li>
 <li>Enable <strong>Show Plugin Content</strong></li>
-</ul>
+</ol>
 <hr />
 <h3 id="if-you-cannot-see-your-plugin-in-the-content-drawer-after-enabling-plugin-visibility">If you cannot see your plugin in the content drawer after enabling plugin visibility:</h3>
 <p>Your plugin is likely installed as an engine plugin. Enabling engine content will let 

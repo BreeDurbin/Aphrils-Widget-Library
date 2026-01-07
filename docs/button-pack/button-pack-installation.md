@@ -19,10 +19,10 @@
 
 **or**
 
-  - Enable it through the editor:  
-    **Edit → Plugins → Enable `Aphrils Widget Library - Buttons`**
+2. Enable it through the editor:
+  - **Edit → Plugins → Enable `Aphrils Widget Library - Buttons`**
 
-2. Enable plugin content visibility:
+3. Enable plugin content visibility:
   - Open the Content Drawer
   - Click the **gear icon** (top-right)
   - Enable **Show Plugin Content**
