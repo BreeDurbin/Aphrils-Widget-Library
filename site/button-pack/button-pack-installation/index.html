@@ -12,13 +12,13 @@
         <meta name="author" content="Silverkeep Studios">
       
       
-        <link rel="canonical" href="https://breedurbin.github.io/Aphrils-Widget-Library/button-pack_1/button-pack-creating-new-buttons/">
+        <link rel="canonical" href="https://breedurbin.github.io/Aphrils-Widget-Library/button-pack/button-pack-installation/">
       
       
-        <link rel="prev" href="../button-pack-widget-blueprints/">
+        <link rel="prev" href="../../requirements/">
       
       
-        <link rel="next" href="../changelog/">
+        <link rel="next" href="../button-pack-styling/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Creating new buttons - Aphril’s Widget Library</title>
+        <title>Installation - Aphril’s Widget Library</title>
       
     
     
@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#install-guide" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Creating new buttons
+              Installation
             
           </span>
         </div>
@@ -397,10 +402,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../button-pack-installation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -416,6 +430,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -481,17 +496,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../button-pack-creating-new-buttons/" class="md-nav__link">
         
   
   
@@ -507,7 +515,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -565,6 +572,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -584,10 +593,55 @@
   
 
 
-  <h1>Creating new buttons</h1>
-
-<p>under construction</p>
-<p>guide to creating new button shapes using krita and packing them correctly</p>
+<h1 id="install-guide">Install guide:</h1>
+<ol>
+<li>Unzip the zip into your plugins folder(Project/Plugins/), you should get: Project/Plugins/AphrilsWidgetLibrary_Buttons</li>
+<li>Add plugin to uproject directly or add using editor(Edit -&gt; Plugins -&gt; Enable AphrilsWidgetLibrary_Buttons)</li>
+<li>Install UiMaterialLab. Download the project from fab, Copy the Content/UiMaterialLab folder into you Project/Content</li>
+<li>Enable plugins view in your content drawer(content Drawer settings(Gear at top right of content drawer) -&gt; Check Plugin Content)</li>
+</ol>
+<h1 id="additional-optional-steps">Additional Optional Steps</h1>
+<ol>
+<li>Verify installation: Right click content drawer -&gt; User Interface -&gt; Widget Blueprint</li>
+<li>Open the new Widget Blueprint</li>
+<li>Check for Aphril's Widget Library in your palette (Defaults to Upper center Left)</li>
+<li>You should have 5 buttons there</li>
+</ol>
+<h1 id="recommended-additional-setup">Recommended Additional setup:</h1>
+<ol>
+<li>In Project/Content Create a WidgetLibrary and then Buttons folder</li>
+<li>This is for user owned Material Instances, Widget Blueprints, Common Ui Styles etc</li>
+</ol>
+<h1 id="your-first-awl-button">Your first Awl Button:</h1>
+<ol>
+<li>Duplicate a Material Instance from the Plugin -&gt; Move it into WidgetLibrary/Buttons</li>
+<li>Dial in the material instance to your preferred style</li>
+<li>Duplicate a HexButton from the Plugin -&gt; Move it into your WidgetLibrary/Buttons</li>
+<li>Update your Duplicated button <em>Variable Defaults</em> (In event Graph)</li>
+<li>From Widget Bluepring Editor Click Event Graph in the top right</li>
+<li>Variables on the Left Side</li>
+<li>Appearance Category</li>
+<li>Button Image variable</li>
+<li>If a details panel doesnt pop up for the Button Image variable then<ul>
+<li>Top Bar -&gt; Window -&gt; Details Panel</li>
+</ul>
+</li>
+<li>Now in the Details Panel of your Button Image variable<ul>
+<li>Default Value -&gt; Button Image: Assign your configured Material Instance from the Content Drawer WidgetLibrary/Buttons</li>
+</ul>
+</li>
+<li>You should now have your newly themed button available in the Aphrils Widget Library Category in the Palette of your Widget Editor</li>
+<li>How to your button to Common Category (Common Ui Default for User Create WBPs):</li>
+<li>Open your Button, Top Bar -&gt; File -&gt; Reparent Blueprint -&gt; CommonButtonBase
+  6, Your own category:</li>
+<li>Use the UAwlMaterialButton Class as a baseline for a new class in your own cpp code</li>
+<li>Use your own class name to avoid One Definition Rule (ODR) violations from teh compiler</li>
+<li>Change the GetPaletteCategory() Funtion to return the Desired name of your Category</li>
+</ol>
+<h1 id="additional-notes">Additional Notes:</h1>
+<p>This duplicate strategy for making your own buttons and themeing them as you like is nice as if gives you a solid default button setup which includes Animations, All Awl Defaults, and Instance Editable properties for your button
+- This means: You can Edit styling, Button Image, Text Styling, Text etc per widget when you add the button within a UMG WBP such as a Menu Widget
+- Change Defaults for your Button by editing the variable defaults in the Event Graph of your widget</p>
 
 
 
