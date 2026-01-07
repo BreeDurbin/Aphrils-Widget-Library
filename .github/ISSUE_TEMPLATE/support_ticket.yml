@@ -40,9 +40,8 @@ body:
     attributes:
       label: Installation Method
       options:
-        - Fab Marketplace
-        - GitHub Release
-        - Built from source
+        - Project Plugin
+        - Engine Plugin
     validations:
       required: true
 
@@ -68,7 +67,5 @@ body:
       label: Confirmations
       options:
         - label: I have checked the documentation
-          required: true
-        - label: I am using a supported Unreal Engine version
-          required: true
+          required: false
 
