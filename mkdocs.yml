@@ -29,8 +29,8 @@ nav:
       - Overview:     index.md
       - Requirements: requirements.md
   - Button-Pack:
-      - Installation:          button-pack_1/button-pack-installation.md
-      - Styling:               button-pack_1/button-pack-styling.md
-      - Widget Blueprints:     button-pack_1/button-pack-widget-blueprints.md
-      - Creating new buttons:  button-pack_1/button-pack-creating-new-buttons.md
-      - Changelog:             button-pack_1/changelog.md
+      - Installation:          button-pack/button-pack-installation.md
+      - Styling:               button-pack/button-pack-styling.md
+      - Widget Blueprints:     button-pack/button-pack-widget-blueprints.md
+      - Creating new buttons:  button-pack/button-pack-creating-new-buttons.md
+      - Changelog:             button-pack/changelog.md
