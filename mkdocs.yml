@@ -5,7 +5,7 @@ site_url: https://breedurbin.github.io/Aphrils-Widget-Library/
 
 repo_name: BreeDurbin/Aphrils-Widget-Library
 repo_url: https://github.com/BreeDurbin/Aphrils-Widget-Library
-
+    
 theme:
   name: material
   logo:    assets/Awl_Logo.png
@@ -16,7 +16,13 @@ theme:
     - navigation.top
     - content.code.copy
   palette:
-    scheme: slate
+    primary:
+      main: "#8a9a5b"      # top bar / primary color
+      contrast: "white"    # text color for top bar
+    accent:
+      main: "#e8d8b8"      # highlight color for buttons / links
+      contrast: "black"
+
 
 markdown_extensions:
   - admonition
