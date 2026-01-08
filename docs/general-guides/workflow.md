@@ -7,18 +7,18 @@
 flowchart TD
 %% Core workflow steps (blue)
     A[Start] --> B[Duplicate Material Instance from plugin]
-    B --> C[Move Material Instance → WidgetLibrary/Buttons]
-C --> D[Edit Material Instance to preferred style]
-D --> E[Duplicate HexButton (or desired button) from plugin]
-E --> F[Move Button → WidgetLibrary/Buttons]
+    B --> C[Move Material Instance to WidgetLibrary/Buttons]
+    C --> D[Edit Material Instance to preferred style]
+    D --> E[Duplicate HexButton (or desired button) from plugin]
+E --> F[Move Button to WidgetLibrary/Buttons]
 F --> G[Open Button in Widget Blueprint Editor]
-G --> H[Event Graph → Variables Panel → Appearance → Button Image]
-H --> I[Details Panel: assign Default Value → configured Material Instance]
+G --> H[Event Graph -> Variables Panel -> Appearance -> Button Image]
+H --> I[Details Panel: assign Default Value -> configured Material Instance]
 I --> J[Verify button appears in Aphril's Widget Library]
 
 %% Optional steps (green)
 J --> K{Optional: Add to Common UI?}
-K -- Yes --> L[File → Reparent Blueprint → CommonButtonBase]
+K -- Yes --> L[File -> Reparent Blueprint -> CommonButtonBase]
 K -- No --> M[Skip]
 
 %% Advanced steps (orange)
@@ -26,7 +26,7 @@ L --> N{Advanced: Create Custom Palette Category?}
 M --> N
 N -- Yes --> O[Create new C++ class from UAwlMaterialButton]
 O --> P[Override GetPaletteCategory()]
-P --> Q[Reparent widgets → new class]
+P --> Q[Reparent widgets to new class]
 N -- No --> R[End]
 
 Q --> R
@@ -52,8 +52,6 @@ style N fill:#ffe5b4
 style O fill:#ffe5b4
 style P fill:#ffe5b4
 style Q fill:#ffe5b4
-
-
 
 ```
 

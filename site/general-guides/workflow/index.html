@@ -907,53 +907,55 @@
 <hr />
 <pre class="mermaid"><code>
 flowchart TD
-    %% Core workflow steps (blue)
-    style A fill:#cce5ff,stroke:#333,stroke-width:1px
-    style B fill:#cce5ff,stroke:#333,stroke-width:1px
-    style C fill:#cce5ff,stroke:#333,stroke-width:1px
-    style D fill:#cce5ff,stroke:#333,stroke-width:1px
-    style E fill:#cce5ff,stroke:#333,stroke-width:1px
-    style F fill:#cce5ff,stroke:#333,stroke-width:1px
-    style G fill:#cce5ff,stroke:#333,stroke-width:1px
-    style H fill:#cce5ff,stroke:#333,stroke-width:1px
-    style I fill:#cce5ff,stroke:#333,stroke-width:1px
-    style J fill:#cce5ff,stroke:#333,stroke-width:1px
-
-    %% Optional steps (green)
-    style K fill:#d4edda,stroke:#333,stroke-width:1px
-    style L fill:#d4edda,stroke:#333,stroke-width:1px
-    style M fill:#d4edda,stroke:#333,stroke-width:1px
-
-    %% Advanced steps (orange)
-    style N fill:#ffe5b4,stroke:#333,stroke-width:1px
-    style O fill:#ffe5b4,stroke:#333,stroke-width:1px
-    style P fill:#ffe5b4,stroke:#333,stroke-width:1px
-    style Q fill:#ffe5b4,stroke:#333,stroke-width:1px
-
-    %% Nodes
+%% Core workflow steps (blue)
     A[Start] --&gt; B[Duplicate Material Instance from plugin]
     B --&gt; C[Move Material Instance → WidgetLibrary/Buttons]
-    C --&gt; D[Edit Material Instance to preferred style]
-    D --&gt; E[Duplicate HexButton (or desired button) from plugin]
-    E --&gt; F[Move Button → WidgetLibrary/Buttons]
-    F --&gt; G[Open Button in Widget Blueprint Editor]
-    G --&gt; H[Event Graph → Variables Panel → Appearance → Button Image]
-    H --&gt; I[Details Panel: assign Default Value → configured Material Instance]
-    I --&gt; J[Verify button appears in Aphril's Widget Library]
+C --&gt; D[Edit Material Instance to preferred style]
+D --&gt; E[Duplicate HexButton (or desired button) from plugin]
+E --&gt; F[Move Button → WidgetLibrary/Buttons]
+F --&gt; G[Open Button in Widget Blueprint Editor]
+G --&gt; H[Event Graph → Variables Panel → Appearance → Button Image]
+H --&gt; I[Details Panel: assign Default Value → configured Material Instance]
+I --&gt; J[Verify button appears in Aphril's Widget Library]
 
-    J --&gt; K{Optional: Add to Common UI?}
-    K -- Yes --&gt; L[File → Reparent Blueprint → CommonButtonBase]
-    K -- No --&gt; M[Skip]
+%% Optional steps (green)
+J --&gt; K{Optional: Add to Common UI?}
+K -- Yes --&gt; L[File → Reparent Blueprint → CommonButtonBase]
+K -- No --&gt; M[Skip]
 
-    L --&gt; N{Advanced: Create Custom Palette Category?}
-    M --&gt; N
-    N -- Yes --&gt; O[Create new C++ class from UAwlMaterialButton]
-    O --&gt; P[Override GetPaletteCategory()]
-    P --&gt; Q[Reparent widgets → new class]
-    N -- No --&gt; R[End]
+%% Advanced steps (orange)
+L --&gt; N{Advanced: Create Custom Palette Category?}
+M --&gt; N
+N -- Yes --&gt; O[Create new C++ class from UAwlMaterialButton]
+O --&gt; P[Override GetPaletteCategory()]
+P --&gt; Q[Reparent widgets → new class]
+N -- No --&gt; R[End]
 
-    Q --&gt; R
-    M --&gt; R
+Q --&gt; R
+M --&gt; R
+
+%% Coloring nodes (v11-compatible)
+style A fill:#cce5ff
+style B fill:#cce5ff
+style C fill:#cce5ff
+style D fill:#cce5ff
+style E fill:#cce5ff
+style F fill:#cce5ff
+style G fill:#cce5ff
+style H fill:#cce5ff
+style I fill:#cce5ff
+style J fill:#cce5ff
+
+style K fill:#d4edda
+style L fill:#d4edda
+style M fill:#d4edda
+
+style N fill:#ffe5b4
+style O fill:#ffe5b4
+style P fill:#ffe5b4
+style Q fill:#ffe5b4
+
+
 </code></pre>
 <hr />
 <ol>
