@@ -1,5 +1,3 @@
-# Aphril's Widget Library
-
 ---
 
 Welcome to the official documentation for Aphril’s Widget Library.
