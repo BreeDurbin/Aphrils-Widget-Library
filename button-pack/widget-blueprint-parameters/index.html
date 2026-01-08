@@ -12,13 +12,13 @@
         <meta name="author" content="Silverkeep Studios">
       
       
-        <link rel="canonical" href="https://breedurbin.github.io/Aphrils-Widget-Library/general-guides/creating-new-shape-textures/">
+        <link rel="canonical" href="https://breedurbin.github.io/Aphrils-Widget-Library/button-pack/widget-blueprint-parameters/">
       
       
-        <link rel="prev" href="../material-parameters/">
+        <link rel="prev" href="../button-pack-installation/">
       
       
-        <link rel="next" href="../channel-packing/">
+        <link rel="next" href="../material-parameters/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Creating new base shapes - Aphril’s Widget Library</title>
+        <title>Widget Blueprint Parameters - Aphril’s Widget Library</title>
       
     
     
@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#wbp-circlebutton" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Creating new base shapes
+              Widget Blueprint Parameters
             
           </span>
         </div>
@@ -280,8 +285,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -292,13 +299,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -319,7 +324,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -337,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../button-pack/button-pack-installation/" class="md-nav__link">
+      <a href="../button-pack-installation/" class="md-nav__link">
         
   
   
@@ -362,70 +367,24 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../button-pack/changelog/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
     
   
-    Changelog
-  
-
-    
-  </span>
   
   
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
+    <li class="md-nav__item md-nav__item--active">
       
-    </li>
-  
-
-    
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
       
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
+        <label class="md-nav__link md-nav__link--active" for="__toc">
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
   
   
   <span class="md-ellipsis">
     
   
-    General Guides
+    Widget Blueprint Parameters
   
 
     
@@ -433,35 +392,17 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    General Guides
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../workflow/" class="md-nav__link">
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Workflow
+    Widget Blueprint Parameters
   
 
     
@@ -470,62 +411,79 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../widget-styling/" class="md-nav__link">
+      
         
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Widget Styling
-  
 
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
   
-    <li class="md-nav__item">
-      <a href="../widget-blueprints/" class="md-nav__link">
-        
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wbp-circlebutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WBP CircleButton
+      
+    </span>
+  </a>
   
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wbp-hexbutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WBP HexButton
+      
+    </span>
+  </a>
   
-  <span class="md-ellipsis">
-    
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wbp-hexcombobutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WBP HexComboButton
+      
+    </span>
+  </a>
   
-    Widget Blueprints
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wbp-rectbutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WBP RectButton
+      
+    </span>
+  </a>
   
-
-    
-  </span>
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wbp-rectcombobutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WBP RectComboButton
+      
+    </span>
+  </a>
   
+</li>
+      
+    </ul>
   
-
-      </a>
+</nav>
+      
     </li>
   
 
@@ -563,24 +521,17 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Creating new base shapes
+    Changelog
   
 
     
@@ -589,7 +540,95 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    General Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general-guides/workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -602,7 +641,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../channel-packing/" class="md-nav__link">
+      <a href="../../general-guides/widget-styling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Widget Styling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general-guides/channel-packing/" class="md-nav__link">
         
   
   
@@ -765,6 +832,69 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wbp-circlebutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WBP CircleButton
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wbp-hexbutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WBP HexButton
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wbp-hexcombobutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WBP HexComboButton
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wbp-rectbutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WBP RectButton
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wbp-rectcombobutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WBP RectComboButton
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -783,10 +913,151 @@
   
 
 
-  <h1>Creating new base shapes</h1>
+  <h1>Widget Blueprint Parameters</h1>
 
-<p>under construction</p>
-<p>guide to creating new button shapes using krita and packing them correctly</p>
+<hr />
+<p><strong>All variables have Instance Editable and Expose on Spawn set to True</strong></p>
+<p>Configure them per widget by modifying the associated variable in the widget instance or swap defaults by changing the variable default in the variable details panel.</p>
+<h2 id="wbp-circlebutton">WBP CircleButton</h2>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Type</th>
+<th>Category</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Button Icon</td>
+<td>Slate Brush</td>
+<td>Appearance</td>
+<td>The Image for the icon of the button.</td>
+<td>X Icon Blue and Gold</td>
+</tr>
+<tr>
+<td>Button Image</td>
+<td>Slate Brush</td>
+<td>Appearance</td>
+<td>The button image. This should generally be a material instance.</td>
+<td>Slate Brush</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wbp-hexbutton">WBP HexButton</h2>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Type</th>
+<th>Category</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Button Text</td>
+<td>Slate Brush</td>
+<td>Content</td>
+<td>The Image for the icon of the button.</td>
+<td>X Icon Blue and Gold</td>
+</tr>
+<tr>
+<td>Text Style</td>
+<td>Common Text Style</td>
+<td>Style</td>
+<td>The button image. This should generally be a material instance.</td>
+<td>Slate Brush</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wbp-hexcombobutton">WBP HexComboButton</h2>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Type</th>
+<th>Category</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Button Icon</td>
+<td>Slate Brush</td>
+<td>Appearance</td>
+<td>The Image for the icon of the button.</td>
+<td>X Icon Blue and Gold</td>
+</tr>
+<tr>
+<td>Button Image</td>
+<td>Slate Brush</td>
+<td>Appearance</td>
+<td>The button image. This should generally be a material instance.</td>
+<td>Slate Brush</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wbp-rectbutton">WBP RectButton</h2>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Type</th>
+<th>Category</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Button Icon</td>
+<td>Slate Brush</td>
+<td>Appearance</td>
+<td>The Image for the icon of the button.</td>
+<td>X Icon Blue and Gold</td>
+</tr>
+<tr>
+<td>Button Image</td>
+<td>Slate Brush</td>
+<td>Appearance</td>
+<td>The button image. This should generally be a material instance.</td>
+<td>Slate Brush</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wbp-rectcombobutton">WBP RectComboButton</h2>
+<table>
+<thead>
+<tr>
+<th>Variable Name</th>
+<th>Type</th>
+<th>Category</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Button Icon</td>
+<td>Slate Brush</td>
+<td>Appearance</td>
+<td>The Image for the icon of the button.</td>
+<td>X Icon Blue and Gold</td>
+</tr>
+<tr>
+<td>Button Image</td>
+<td>Slate Brush</td>
+<td>Appearance</td>
+<td>The button image. This should generally be a material instance.</td>
+<td>Slate Brush</td>
+</tr>
+</tbody>
+</table>
 
 
 
