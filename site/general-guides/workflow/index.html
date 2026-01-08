@@ -905,57 +905,6 @@
 
 <h1 id="recommended-workflow">Recommended Workflow</h1>
 <hr />
-<pre class="mermaid"><code>
-flowchart TD
-%% Core workflow steps (blue)
-    A[Start] --&gt; B[Duplicate Material Instance from plugin]
-    B --&gt; C[Move Material Instance to WidgetLibrary/Buttons]
-    C --&gt; D[Edit Material Instance to preferred style]
-    D --&gt; E[Duplicate HexButton (or desired button) from plugin]
-E --&gt; F[Move Button to WidgetLibrary/Buttons]
-F --&gt; G[Open Button in Widget Blueprint Editor]
-G --&gt; H[Event Graph -&gt; Variables Panel -&gt; Appearance -&gt; Button Image]
-H --&gt; I[Details Panel: assign Default Value -&gt; configured Material Instance]
-I --&gt; J[Verify button appears in Aphril's Widget Library]
-
-%% Optional steps (green)
-J --&gt; K{Optional: Add to Common UI?}
-K -- Yes --&gt; L[File -&gt; Reparent Blueprint -&gt; CommonButtonBase]
-K -- No --&gt; M[Skip]
-
-%% Advanced steps (orange)
-L --&gt; N{Advanced: Create Custom Palette Category?}
-M --&gt; N
-N -- Yes --&gt; O[Create new C++ class from UAwlMaterialButton]
-O --&gt; P[Override GetPaletteCategory()]
-P --&gt; Q[Reparent widgets to new class]
-N -- No --&gt; R[End]
-
-Q --&gt; R
-M --&gt; R
-
-%% Coloring nodes (v11-compatible)
-style A fill:#cce5ff
-style B fill:#cce5ff
-style C fill:#cce5ff
-style D fill:#cce5ff
-style E fill:#cce5ff
-style F fill:#cce5ff
-style G fill:#cce5ff
-style H fill:#cce5ff
-style I fill:#cce5ff
-style J fill:#cce5ff
-
-style K fill:#d4edda
-style L fill:#d4edda
-style M fill:#d4edda
-
-style N fill:#ffe5b4
-style O fill:#ffe5b4
-style P fill:#ffe5b4
-style Q fill:#ffe5b4
-</code></pre>
-<hr />
 <ol>
 <li>Duplicate a <strong>Material Instance</strong> from the plugin</li>
 <li>
@@ -989,6 +938,33 @@ style Q fill:#ffe5b4
 <li>Your newly themed button should now appear in the<br />
 <strong>Aphril’s Widget Library</strong> category in the Widget Palette</li>
 </ol>
+<pre class="mermaid"><code>
+flowchart TD
+
+    A[Start]
+    B[Duplicate Material Instance from plugin]
+    C[Move Material Instance to WidgetLibrary Buttons]
+    D[Edit Material Instance style]
+    E[Duplicate HexButton or another button]
+    F[Move Button to WidgetLibrary Buttons]
+    G[Open Button Widget Blueprint]
+    H[Event Graph Variables Appearance Button Image]
+    I[Assign Default Value Material Instance]
+    J[Verify button appears in Widget Palette]
+
+    A --&gt; B --&gt; C --&gt; D --&gt; E --&gt; F --&gt; G --&gt; H --&gt; I --&gt; J
+
+    style A fill:#1e293b,color:#ffffff
+    style B fill:#1e293b,color:#ffffff
+    style C fill:#1e293b,color:#ffffff
+    style D fill:#1e293b,color:#ffffff
+    style E fill:#1e293b,color:#ffffff
+    style F fill:#1e293b,color:#ffffff
+    style G fill:#1e293b,color:#ffffff
+    style H fill:#1e293b,color:#ffffff
+    style I fill:#1e293b,color:#ffffff
+    style J fill:#1e293b,color:#ffffff
+</code></pre>
 <hr />
 <h3 id="adding-your-button-to-the-common-ui-category-optional">Adding Your Button to the Common UI Category (Optional)</h3>
 <p>To place your button in the <strong>Common UI</strong> category (Common UI default for user-created widgets):</p>
