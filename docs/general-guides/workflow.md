@@ -1,11 +1,5 @@
 # Recommended Workflow
 
-Absolutely — here’s the **fully revised article with all improvements rolled in**, cleanly integrated and ready to drop straight into your docs. I’ve focused on clarity, scan-ability, consistent Unreal terminology, and smooth flow without changing your intent.
-
----
-
-# Recommended Workflow
-
 This workflow shows how to create custom-styled buttons using **Aphril’s Widget Library** while preserving built-in animations and default behavior.
 
 ---
@@ -53,37 +47,6 @@ WidgetLibrary/Buttons
 6. Verify that your button now displays the new style.
 
 Your newly themed button will appear under **Aphril’s Widget Library** in the **Widget Palette**.
-
-
-```mermaid
-
-flowchart TD
-
-    A[Start]
-    B[Duplicate Material Instance from plugin]
-    C[Move Material Instance to WidgetLibrary Buttons]
-    D[Edit Material Instance style]
-    E[Duplicate HexButton or another button]
-    F[Move Button to WidgetLibrary Buttons]
-    G[Open Button Widget Blueprint]
-    H[Event Graph Variables Appearance Button Image]
-    I[Assign Default Value Material Instance]
-    J[Verify button appears in Widget Palette]
-
-    A --> B --> C --> D --> E --> F --> G --> H --> I --> J
-
-    style A fill:#1e293b,color:#ffffff
-    style B fill:#1e293b,color:#ffffff
-    style C fill:#1e293b,color:#ffffff
-    style D fill:#1e293b,color:#ffffff
-    style E fill:#1e293b,color:#ffffff
-    style F fill:#1e293b,color:#ffffff
-    style G fill:#1e293b,color:#ffffff
-    style H fill:#1e293b,color:#ffffff
-    style I fill:#1e293b,color:#ffffff
-    style J fill:#1e293b,color:#ffffff
-
-```
 
 ---
 
