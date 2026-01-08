@@ -18,11 +18,6 @@ theme:
 
 markdown_extensions:
   - admonition
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.details
@@ -39,7 +34,6 @@ nav:
       - Changelog:                    button-pack/changelog.md
   - General Guides: 
       - Workflow:                     general-guides/workflow.md
-      - Widget Styling:               general-guides/widget-styling.md
       - Creating New Themes:          general-guides/creating-new-themes.md
       - Channel Packing:              general-guides/channel-packing.md
   - Misc: 
