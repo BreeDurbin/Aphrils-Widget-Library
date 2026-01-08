@@ -1,60 +1,5 @@
 # Recommended Workflow
 
----
-
-```mermaid
-
-flowchart TD
-%% Core workflow steps (blue)
-    A[Start] --> B[Duplicate Material Instance from plugin]
-    B --> C[Move Material Instance to WidgetLibrary/Buttons]
-    C --> D[Edit Material Instance to preferred style]
-    D --> E[Duplicate HexButton (or desired button) from plugin]
-E --> F[Move Button to WidgetLibrary/Buttons]
-F --> G[Open Button in Widget Blueprint Editor]
-G --> H[Event Graph -> Variables Panel -> Appearance -> Button Image]
-H --> I[Details Panel: assign Default Value -> configured Material Instance]
-I --> J[Verify button appears in Aphril's Widget Library]
-
-%% Optional steps (green)
-J --> K{Optional: Add to Common UI?}
-K -- Yes --> L[File -> Reparent Blueprint -> CommonButtonBase]
-K -- No --> M[Skip]
-
-%% Advanced steps (orange)
-L --> N{Advanced: Create Custom Palette Category?}
-M --> N
-N -- Yes --> O[Create new C++ class from UAwlMaterialButton]
-O --> P[Override GetPaletteCategory()]
-P --> Q[Reparent widgets to new class]
-N -- No --> R[End]
-
-Q --> R
-M --> R
-
-%% Coloring nodes (v11-compatible)
-style A fill:#cce5ff
-style B fill:#cce5ff
-style C fill:#cce5ff
-style D fill:#cce5ff
-style E fill:#cce5ff
-style F fill:#cce5ff
-style G fill:#cce5ff
-style H fill:#cce5ff
-style I fill:#cce5ff
-style J fill:#cce5ff
-
-style K fill:#d4edda
-style L fill:#d4edda
-style M fill:#d4edda
-
-style N fill:#ffe5b4
-style O fill:#ffe5b4
-style P fill:#ffe5b4
-style Q fill:#ffe5b4
-
-```
-
 
 ---
 
@@ -84,6 +29,36 @@ In the **Details** panel for `Button Image`:
 5. Your newly themed button should now appear in the  
    **Aphril’s Widget Library** category in the Widget Palette
 
+```mermaid
+
+flowchart TD
+
+    A[Start]
+    B[Duplicate Material Instance from plugin]
+    C[Move Material Instance to WidgetLibrary Buttons]
+    D[Edit Material Instance style]
+    E[Duplicate HexButton or another button]
+    F[Move Button to WidgetLibrary Buttons]
+    G[Open Button Widget Blueprint]
+    H[Event Graph Variables Appearance Button Image]
+    I[Assign Default Value Material Instance]
+    J[Verify button appears in Widget Palette]
+
+    A --> B --> C --> D --> E --> F --> G --> H --> I --> J
+
+    style A fill:#1e293b,color:#ffffff
+    style B fill:#1e293b,color:#ffffff
+    style C fill:#1e293b,color:#ffffff
+    style D fill:#1e293b,color:#ffffff
+    style E fill:#1e293b,color:#ffffff
+    style F fill:#1e293b,color:#ffffff
+    style G fill:#1e293b,color:#ffffff
+    style H fill:#1e293b,color:#ffffff
+    style I fill:#1e293b,color:#ffffff
+    style J fill:#1e293b,color:#ffffff
+
+```
+
 ---
 
 ### Adding Your Button to the Common UI Category (Optional)
@@ -102,7 +77,6 @@ To place your button in the **Common UI** category (Common UI default for user-c
 2. Use your own class name to avoid One Definition Rule (ODR) violations
 3. Override `GetPaletteCategory()` to return your desired category name
 4. Reparent the widgets you want in the new category to this new class.
-
 
 ---
 
