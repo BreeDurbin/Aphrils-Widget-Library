@@ -2,6 +2,62 @@
 
 ---
 
+```mermaid
+
+flowchart TD
+    %% Core workflow steps (blue)
+    style A fill:#cce5ff,stroke:#333,stroke-width:1px
+    style B fill:#cce5ff,stroke:#333,stroke-width:1px
+    style C fill:#cce5ff,stroke:#333,stroke-width:1px
+    style D fill:#cce5ff,stroke:#333,stroke-width:1px
+    style E fill:#cce5ff,stroke:#333,stroke-width:1px
+    style F fill:#cce5ff,stroke:#333,stroke-width:1px
+    style G fill:#cce5ff,stroke:#333,stroke-width:1px
+    style H fill:#cce5ff,stroke:#333,stroke-width:1px
+    style I fill:#cce5ff,stroke:#333,stroke-width:1px
+    style J fill:#cce5ff,stroke:#333,stroke-width:1px
+    
+    %% Optional steps (green)
+    style K fill:#d4edda,stroke:#333,stroke-width:1px
+    style L fill:#d4edda,stroke:#333,stroke-width:1px
+    style M fill:#d4edda,stroke:#333,stroke-width:1px
+    
+    %% Advanced steps (orange)
+    style N fill:#ffe5b4,stroke:#333,stroke-width:1px
+    style O fill:#ffe5b4,stroke:#333,stroke-width:1px
+    style P fill:#ffe5b4,stroke:#333,stroke-width:1px
+    style Q fill:#ffe5b4,stroke:#333,stroke-width:1px
+    
+    %% Nodes
+    A[Start] --> B[Duplicate Material Instance from plugin]
+    B --> C[Move Material Instance → WidgetLibrary/Buttons]
+    C --> D[Edit Material Instance to preferred style]
+    D --> E[Duplicate HexButton (or desired button) from plugin]
+    E --> F[Move Button → WidgetLibrary/Buttons]
+    F --> G[Open Button in Widget Blueprint Editor]
+    G --> H[Event Graph → Variables Panel → Appearance → Button Image]
+    H --> I[Details Panel: assign Default Value → configured Material Instance]
+    I --> J[Verify button appears in Aphril's Widget Library]
+    
+    J --> K{Optional: Add to Common UI?}
+    K -- Yes --> L[File → Reparent Blueprint → CommonButtonBase]
+    K -- No --> M[Skip]
+    
+    L --> N{Advanced: Create Custom Palette Category?}
+    M --> N
+    N -- Yes --> O[Create new C++ class from UAwlMaterialButton]
+    O --> P[Override GetPaletteCategory()]
+    P --> Q[Reparent widgets → new class]
+    N -- No --> R[End]
+    
+    Q --> R
+    M --> R
+
+```
+
+
+---
+
 1. Duplicate a **Material Instance** from the plugin
 - Move it into `WidgetLibrary/Buttons`
 
