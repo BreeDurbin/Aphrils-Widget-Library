@@ -944,8 +944,8 @@
   <h1>Widget Blueprint Parameters</h1>
 
 <hr />
-<p><strong>All variables have Instance Editable and Expose on Spawn set to True</strong></p>
-<p>Configure them per widget by modifying the associated variable in the widget instance or swap defaults by changing the variable default in the variable details panel.</p>
+<p><strong>All variables are Instance Editable and set to Expose on Spawn.</strong></p>
+<p>Configure each widget by modifying its instance variables, or change the default values in the Variable Details panel.</p>
 <h2 id="wbp-circlebutton">WBP CircleButton</h2>
 <table>
 <thead>
@@ -962,15 +962,15 @@
 <td>Button Icon</td>
 <td>Slate Brush</td>
 <td>Appearance</td>
-<td>The Image for the icon of the button.</td>
+<td>The image displayed as the button icon.</td>
 <td>X Icon Blue and Gold</td>
 </tr>
 <tr>
 <td>Button Image</td>
 <td>Slate Brush</td>
 <td>Appearance</td>
-<td>The button image. This should generally be a material instance.</td>
-<td>Slate Brush</td>
+<td>The image for the main button. Should generally be a material instance.</td>
+<td>MI CircleButton BlueAndGold</td>
 </tr>
 </tbody>
 </table>
@@ -987,18 +987,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Button Text</td>
+<td>Button Image</td>
 <td>Slate Brush</td>
+<td>Appearance</td>
+<td>The image for the main button. Should generally be a material instance.</td>
+<td>MI HexButton BlueAndGold</td>
+</tr>
+<tr>
+<td>Button Text</td>
+<td>Text</td>
 <td>Content</td>
-<td>The Image for the icon of the button.</td>
-<td>X Icon Blue and Gold</td>
+<td>Text to be displayed on the button, styled by TextStyle.</td>
+<td>Default Text</td>
 </tr>
 <tr>
 <td>Text Style</td>
 <td>Common Text Style</td>
 <td>Style</td>
-<td>The button image. This should generally be a material instance.</td>
-<td>Slate Brush</td>
+<td>The Common Text Style applied to the Button Text.</td>
+<td>BP Awl TextStyle BlueAndGold</td>
 </tr>
 </tbody>
 </table>
@@ -1015,18 +1022,39 @@
 </thead>
 <tbody>
 <tr>
-<td>Button Icon</td>
+<td>Icon Image</td>
 <td>Slate Brush</td>
 <td>Appearance</td>
-<td>The Image for the icon of the button.</td>
-<td>X Icon Blue and Gold</td>
+<td>The image displayed on the icon button.</td>
+<td>T Monitor Icon</td>
+</tr>
+<tr>
+<td>Icon Button Image</td>
+<td>Slate Brush</td>
+<td>Appearance</td>
+<td>The button image for the icon button. Should generally be a material instance.</td>
+<td>MI CircleButton BlueAndGold</td>
 </tr>
 <tr>
 <td>Button Image</td>
 <td>Slate Brush</td>
 <td>Appearance</td>
-<td>The button image. This should generally be a material instance.</td>
-<td>Slate Brush</td>
+<td>The image for the main button. Should generally be a material instance.</td>
+<td>MI HexButton BlueAndGold</td>
+</tr>
+<tr>
+<td>Button Text</td>
+<td>Text</td>
+<td>Content</td>
+<td>Text to be displayed on the main button, styled by TextStyle.</td>
+<td>Default Text</td>
+</tr>
+<tr>
+<td>Text Style</td>
+<td>Common Text Style</td>
+<td>Style</td>
+<td>The Common Text Style applied to the Button Text.</td>
+<td>BP Awl TextStyle BlueAndGold</td>
 </tr>
 </tbody>
 </table>
@@ -1043,18 +1071,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Button Icon</td>
-<td>Slate Brush</td>
-<td>Appearance</td>
-<td>The Image for the icon of the button.</td>
-<td>X Icon Blue and Gold</td>
-</tr>
-<tr>
 <td>Button Image</td>
 <td>Slate Brush</td>
 <td>Appearance</td>
-<td>The button image. This should generally be a material instance.</td>
-<td>Slate Brush</td>
+<td>The image for the main button. Should generally be a material instance.</td>
+<td>MI RectButton BlueAndGold</td>
+</tr>
+<tr>
+<td>Button Text</td>
+<td>Text</td>
+<td>Content</td>
+<td>Text to be displayed on the button, styled by TextStyle.</td>
+<td>Default Text</td>
+</tr>
+<tr>
+<td>Text Style</td>
+<td>Common Text Style</td>
+<td>Style</td>
+<td>The Common Text Style applied to the Button Text.</td>
+<td>BP Awl TextStyle BlueAndGold</td>
 </tr>
 </tbody>
 </table>
@@ -1071,18 +1106,39 @@
 </thead>
 <tbody>
 <tr>
-<td>Button Icon</td>
+<td>Icon Image</td>
 <td>Slate Brush</td>
 <td>Appearance</td>
-<td>The Image for the icon of the button.</td>
-<td>X Icon Blue and Gold</td>
+<td>The image displayed on the icon button.</td>
+<td>T Monitor Icon</td>
+</tr>
+<tr>
+<td>Icon Button Image</td>
+<td>Slate Brush</td>
+<td>Appearance</td>
+<td>The button image for the icon button. Should generally be a material instance.</td>
+<td>MI CircleButton BlueAndGold</td>
 </tr>
 <tr>
 <td>Button Image</td>
 <td>Slate Brush</td>
 <td>Appearance</td>
-<td>The button image. This should generally be a material instance.</td>
-<td>Slate Brush</td>
+<td>The image for the main button. Should generally be a material instance.</td>
+<td>MI RectButton BlueAndGold</td>
+</tr>
+<tr>
+<td>Button Text</td>
+<td>Text</td>
+<td>Content</td>
+<td>Text to be displayed on the main button, styled by TextStyle.</td>
+<td>Default Text</td>
+</tr>
+<tr>
+<td>Text Style</td>
+<td>Common Text Style</td>
+<td>Style</td>
+<td>The Common Text Style applied to the Button Text.</td>
+<td>BP Awl TextStyle BlueAndGold</td>
 </tr>
 </tbody>
 </table>
