@@ -35,6 +35,7 @@ nav:
   - General Guides: 
       - Workflow:                     general-guides/workflow.md
       - Widget Styling:               general-guides/widget-styling.md
+      - Creating New Themes:          general-guides/creating-new-themes.md
       - Channel Packing:              general-guides/channel-packing.md
   - Misc: 
       - Design Pillars:               misc/design-pillars.md
