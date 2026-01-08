@@ -29,13 +29,12 @@ nav:
   - Requirements:                     requirements.md
   - Button-Pack:
       - Installation:                 button-pack/button-pack-installation.md
+      - Widget Blueprint Parameters:  button-pack/widget-blueprint-parameters.md
+      - Material Parameters:          button-pack/material-parameters.md
       - Changelog:                    button-pack/changelog.md
   - General Guides: 
       - Workflow:                     general-guides/workflow.md
       - Widget Styling:               general-guides/widget-styling.md
-      - Widget Blueprints:            general-guides/widget-blueprints.md
-      - Material Parameters:          general-guides/material-parameters.md
-      - Creating new base shapes:     general-guides/creating-new-shape-textures.md
       - Channel Packing:              general-guides/channel-packing.md
   - Misc: 
       - Design Pillars:               misc/design-pillars.md
