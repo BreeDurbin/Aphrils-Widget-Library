@@ -17,11 +17,8 @@ theme:
     - content.code.copy
   palette:
     primary:
-      main: "#8a9a5b"      # top bar / primary color
-      contrast: "white"    # text color for top bar
-    accent:
-      main: "#e8d8b8"      # highlight color for buttons / links
-      contrast: "black"
+      main: "e8d8b8"        # top bar / primary color
+      contrast: "8a9a5b"    # text color for top bar
 
 
 markdown_extensions:
