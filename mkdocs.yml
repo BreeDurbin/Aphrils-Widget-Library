@@ -8,6 +8,7 @@ repo_url: https://github.com/BreeDurbin/Aphrils-Widget-Library
 
 theme:
   name: material
+  logo: assets/logo.png
   features:
     - navigation.sections
     - navigation.expand
