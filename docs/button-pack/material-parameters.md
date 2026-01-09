@@ -43,15 +43,19 @@
 
 ## Gradient
 
-| Parameter                          | Type   | Description                                                                                           |
-| ---------------------------------- | ------ |-------------------------------------------------------------------------------------------------------|
-| **Body Gradient Height**           | Scalar | Height of the Body Gradient(0, No gradient), (1, Gradient applies to to the full width as a scalar)   |
-| **Body Gradient Lower Strength**   | Scalar | Lower bound multiplier for the color of the Body Gradient.                                            |
-| **Body Gradient Upper Strength**   | Scalar | Upper bound multiplier for the color of the Body Gradient.                                            |
-| **Border Gradient Lower Strength** | Scalar | Lower bound multiplier for the color of the Border Gradient.                                          |
-| **Border Gradient Upper Strength** | Scalar | Upper bound multiplier for the color of the Border Gradient.                                          |
-| **BorderHorizontalGradientHeight** | Scalar | Height of the Border Gradient(0, No gradient), (1, Gradient applies to to the full width as a scalar) |
-| **BorderVerticalGradientHeight**   | Scalar | Height of the Border Gradient(0, No gradient), (1, Gradient applies to to the full width as a scalar) |
+| Parameter                          | Type   | Description                                                                                                                                                                                                                      |
+|------------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Use Border Horizontal Gradient** | Scalar | Whether or not to apply a border horizontal gradient. 0 use none, 1 use all, inbetween use some. Play with this and the other use gradient params. You can create tons of different gradients types by moving the values around. | 
+| **Use Border Vertical Gradient**   | Scalar | Whether or not to apply a border vertical gradient. 0 use none, 1 use all, inbetween use some. Play with this and the other use gradient params. You can create tons of different gradients types by moving the values around.   | 
+| **Use Body Horizontal Gradient**   | Scalar | Whether or not to apply a body horizontal gradient. 0 use none, 1 use all, inbetween use some. Play with this and the other use gradient params. You can create tons of different gradients types by moving the values around.   | 
+| **Use Body Vertical Gradient**     | Scalar | Whether or not to apply a body vertical gradient. 0 use none, 1 use all, inbetween use some. Play with this and the other use gradient params. You can create tons of different gradients types by moving the values around.     | 
+| **Body Gradient Height**           | Scalar | Height of the Body Gradient(0, No gradient), (1, Gradient applies to to the full width as a scalar)                                                                                                                              |
+| **Body Gradient Lower Strength**   | Scalar | Lower bound multiplier for the color of the Body Gradient.                                                                                                                                                                       |
+| **Body Gradient Upper Strength**   | Scalar | Upper bound multiplier for the color of the Body Gradient.                                                                                                                                                                       |
+| **Border Gradient Lower Strength** | Scalar | Lower bound multiplier for the color of the Border Gradient.                                                                                                                                                                     |
+| **Border Gradient Upper Strength** | Scalar | Upper bound multiplier for the color of the Border Gradient.                                                                                                                                                                     |
+| **BorderHorizontalGradientHeight** | Scalar | Height of the Border Gradient(0, No gradient), (1, Gradient applies to to the full width as a scalar)                                                                                                                            |
+| **BorderVerticalGradientHeight**   | Scalar | Height of the Border Gradient(0, No gradient), (1, Gradient applies to to the full width as a scalar)                                                                                                                            |
 
 ---
 
