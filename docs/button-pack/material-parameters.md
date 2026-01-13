@@ -4,23 +4,27 @@
 ## Background
 
 | Parameter                             | Type      | Description                                                                              |
-| ------------------------------------- | --------- |------------------------------------------------------------------------------------------|
+|---------------------------------------| --------- |------------------------------------------------------------------------------------------|
 | **Body Background Texture**           | Texture2D | Background texture to be lerped into the body texture.                                   |
 | **Body Background Texture Intensity** | Scalar    | Luminosity multiplier which determines how strongly the body background texture shows.   |
 | **Border Background Intensity**       | Scalar    | Luminosity multiplier which determines how strongly the border background texture shows. |
 | **Border Background Texture**         | Texture2D | Background texture to be lerped into the border texture.                                 |
+| **Body Background Lower Strength**    | Scalar    | Lower bound multiplier for the color of the Body Background.                             |
+| **Body Background Upper Strength**    | Scalar    | Upper bound multiplier for the color of the Body Background.                             |
+| **Border Background Lower Strength**  | Scalar    | Lower bound multiplier for the color of the Border Background.                           |
+| **Border Background Upper Strength**  | Scalar    | Upper bound multiplier for the color of the Border Background.                           |
 
 ---
 
 ## Button
 
-| Parameter          | Type      | Description                                                                                    |
-| ------------------ | --------- |------------------------------------------------------------------------------------------------|
-| **Button Size**    | Scalar    | Used to control the size of the button, particularly during animation.                         |
-| **Mipmap bias**    | Scalar    | Used to provide a weak blue effect for minor AA. Seg Mip Gen Settins = Blur 1 in your texture. |
-| **Position Y**     | Scalar    | Control of the Y value of the UV, useful for pressed animations.                               |
-| **Button Texture** | Texture2D | Red: Border, Blue: Body, Green: Opacity Mask                                                   |
-
+| Parameter            | Type      | Description                                                                                    |
+|----------------------|-----------|------------------------------------------------------------------------------------------------|
+| **Button Size**      | Scalar    | Used to control the size of the button, particularly during animation.                         |
+| **Mipmap bias**      | Scalar    | Used to provide a weak blue effect for minor AA. Seg Mip Gen Settins = Blur 1 in your texture. |
+| **Position Y**       | Scalar    | Control of the Y value of the UV, useful for pressed animations.                               |
+| **Button Texture**   | Texture2D | Red: Border, Blue: Body, Green: Opacity Mask                                                   |
+| **Opacity Strength** | Scalar    | Scalar multiplier to Opacity                                                                   |
 ---
 
 ## Color
@@ -61,22 +65,30 @@
 
 ## Grunge
 
-| Parameter                   | Type      | Description                                                                          |
-| --------------------------- | --------- |--------------------------------------------------------------------------------------|
-| **Body Grunge Intensity**   | Scalar    | Luminosity multiplier which determines how strongly the Body Grunge Texture shows.   |
-| **Body Grunge Texture**     | Texture2D | Grunge  texture to be lerped into the Body Texture.                                  |
-| **Border Grunge Intensity** | Scalar    | Luminosity multiplier which determines how strongly the Border Grunge Texture shows. |
-| **Border Grunge Texture**   | Texture2D | Grunge Texture to be lerped into the Border Texture.                                 |
+| Parameter                        | Type      | Description                                                                          |
+|----------------------------------|-----------|--------------------------------------------------------------------------------------|
+| **Body Grunge Intensity**        | Scalar    | Luminosity multiplier which determines how strongly the Body Grunge Texture shows.   |
+| **Body Grunge Texture**          | Texture2D | Grunge  texture to be lerped into the Body Texture.                                  |
+| **Border Grunge Intensity**      | Scalar    | Luminosity multiplier which determines how strongly the Border Grunge Texture shows. |
+| **Border Grunge Texture**        | Texture2D | Grunge Texture to be lerped into the Border Texture.                                 |
+| **Body Grunge Lower Strength**   | Scalar    | Lower bound multiplier for the color of the Body Grunge.                             |
+| **Body Grunge Upper Strength**   | Scalar    | Upper bound multiplier for the color of the Body Grunge.                             |
+| **Border Grunge Lower Strength** | Scalar    | Lower bound multiplier for the color of the Border Grunge.                           |
+| **Border Grunge Upper Strength** | Scalar    | Upper bound multiplier for the color of the Border Grunge.                           |
 
 ---
 
 ## Noise
 
-| Parameter                  | Type      | Description                                                                         |
-| -------------------------- | --------- |-------------------------------------------------------------------------------------|
-| **Body Noise Intensity**   | Scalar    | Luminosity multiplier which determines how strongly the Body Noise Texture shows.   |
-| **Border Noise Intensity** | Scalar    | Luminosity multiplier which determines how strongly the Border Noise Texture shows. |
-| **Noise Texture**          | Texture2D | Noise  texture to be lerped into the Body Texture.                                  |
+| Parameter                         | Type      | Description                                                                         |
+|-----------------------------------| --------- |-------------------------------------------------------------------------------------|
+| **Body Noise Intensity**          | Scalar    | Luminosity multiplier which determines how strongly the Body Noise Texture shows.   |
+| **Border Noise Intensity**        | Scalar    | Luminosity multiplier which determines how strongly the Border Noise Texture shows. |
+| **Noise Texture**                 | Texture2D | Noise  texture to be lerped into the Body Texture.                                  |
+| **Body Noise Lower Strength**     | Scalar    | Lower bound multiplier for the color of the Body Noise.                             |
+| **Body Noise Upper Strength**     | Scalar    | Upper bound multiplier for the color of the Body Noise.                             |
+| **Border Noise Lower Strength**   | Scalar    | Lower bound multiplier for the color of the Border Noise.                           |
+| **Border Noise Upper Strength**   | Scalar    | Upper bound multiplier for the color of the Border Noise.                           |
 
 ---
 
