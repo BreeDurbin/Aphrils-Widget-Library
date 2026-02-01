@@ -1,6 +1,6 @@
-site_name: Aphril’s Widget Library
+site_name: Silverkeep Studios
 site_description: Modular Common UI based widgets for Unreal Engine
-site_author: Silverkeep Studios
+site_author: Aphril
 site_url: https://breedurbin.github.io/Aphrils-Widget-Library/
 
 repo_name: BreeDurbin/Aphrils-Widget-Library
@@ -14,9 +14,28 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.tabs
+    - navigation.footer
     - content.code.copy
   palette:
-    scheme: slate
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
     
 markdown_extensions:
   - admonition
@@ -28,8 +47,8 @@ markdown_extensions:
 
 nav:
   - Overview:                         index.md
-  - Requirements:                     requirements.md
   - Button-Pack:
+      - Requirements:                 requirements.md
       - Installation:                 button-pack/button-pack-installation.md
       - Widget Blueprint Parameters:  button-pack/widget-blueprint-parameters.md
       - Material Parameters:          button-pack/material-parameters.md
